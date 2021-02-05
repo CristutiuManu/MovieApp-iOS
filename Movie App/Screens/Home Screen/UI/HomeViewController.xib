@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Movie_App" customModuleProvider="target">
+            <connections>
+                <outlet property="actorsButton" destination="Qhc-ou-twU" id="a08-kl-vtQ"/>
+                <outlet property="doneButton" destination="DSk-z6-g2P" id="rjS-09-HZd"/>
+                <outlet property="genresButton" destination="wiU-YZ-EVg" id="32T-Ko-w34"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WrK-ca-CeH">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <items>
+                        <barButtonItem title="Done" id="DSk-z6-g2P">
+                            <connections>
+                                <action selector="doneActionButton:" destination="-1" id="CHr-6Y-Sl1"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Khp-l1-fnu">
+                    <rect key="frame" x="98" y="140" width="124" height="288"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wiU-YZ-EVg" customClass="RoundButton" customModule="Movie_App" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="124" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="0Sr-1u-ZRL"/>
+                                <constraint firstAttribute="width" constant="124" id="oTC-Zu-Ybe"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="Genres">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                                    <real key="value" value="27"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="AccentColor"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="genresButtonAction:" destination="-1" eventType="touchUpInside" id="Z3B-KY-lfJ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qhc-ou-twU" customClass="RoundButton" customModule="Movie_App" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="228" width="124" height="60"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="Actors">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="AccentColor"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                                    <real key="value" value="27"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="actorsActionButton:" destination="-1" eventType="touchUpInside" id="vO1-b2-TJ4"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Qhc-ou-twU" secondAttribute="bottom" id="4XG-P2-Ggj"/>
+                        <constraint firstItem="wiU-YZ-EVg" firstAttribute="top" secondItem="Khp-l1-fnu" secondAttribute="top" id="Gpa-N3-dSC"/>
+                        <constraint firstAttribute="trailing" secondItem="wiU-YZ-EVg" secondAttribute="trailing" id="KYV-J1-wrL"/>
+                        <constraint firstItem="wiU-YZ-EVg" firstAttribute="leading" secondItem="Khp-l1-fnu" secondAttribute="leading" id="Ofn-U8-X1u"/>
+                        <constraint firstItem="Qhc-ou-twU" firstAttribute="width" secondItem="wiU-YZ-EVg" secondAttribute="width" id="X3j-Sr-d2t"/>
+                        <constraint firstItem="Qhc-ou-twU" firstAttribute="top" secondItem="wiU-YZ-EVg" secondAttribute="bottom" constant="168" id="cTD-AT-Utm"/>
+                        <constraint firstItem="Qhc-ou-twU" firstAttribute="leading" secondItem="Khp-l1-fnu" secondAttribute="leading" id="ps7-5e-krC"/>
+                        <constraint firstAttribute="trailing" secondItem="Qhc-ou-twU" secondAttribute="trailing" id="yIG-Fi-GHq"/>
+                        <constraint firstItem="Qhc-ou-twU" firstAttribute="height" secondItem="wiU-YZ-EVg" secondAttribute="height" id="zl6-hj-lge"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="WrK-ca-CeH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="GUq-mN-dK8"/>
+                <constraint firstItem="Khp-l1-fnu" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Ip4-Ld-Dlp"/>
+                <constraint firstItem="Khp-l1-fnu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ixc-Wu-Pek"/>
+                <constraint firstItem="Khp-l1-fnu" firstAttribute="top" relation="greaterThanOrEqual" secondItem="WrK-ca-CeH" secondAttribute="bottom" constant="20" id="Os6-tT-AdA"/>
+                <constraint firstItem="WrK-ca-CeH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="QPn-FA-qn3"/>
+                <constraint firstItem="Khp-l1-fnu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="V7m-3u-e44"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WrK-ca-CeH" secondAttribute="trailing" id="oYh-CG-UrN"/>
+                <constraint firstItem="WrK-ca-CeH" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="rhR-kA-jLc"/>
+            </constraints>
+            <point key="canvasLocation" x="134.57943925233644" y="126.99784017278618"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Qhc-ou-twU">
+            <size key="intrinsicContentSize" width="53" height="34"/>
+        </designable>
+        <designable name="wiU-YZ-EVg">
+            <size key="intrinsicContentSize" width="58" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

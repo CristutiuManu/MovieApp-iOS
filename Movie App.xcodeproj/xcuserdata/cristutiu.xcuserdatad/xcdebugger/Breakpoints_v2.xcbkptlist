@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "EF54BA49-4ED7-44AF-847D-BCF3D9A9E77E"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EA8A7403-D548-4C71-AA9F-71C685A8B8BA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Movie App/ActorsTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "ActorsTableViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "EA8A7403-D548-4C71-AA9F-71C685A8B8BA - e8329285b3dd1570"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "globalinit_33_F0156C3CEF8B4A543E15206D6CB7697B_func0"
+                  moduleName = "Movie App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cristutiu/movie-app-ios/Movie%20App/Movie%20App/ActorsTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "EA8A7403-D548-4C71-AA9F-71C685A8B8BA - d7e0aecbd82fb583"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Movie_App.ActorsTableViewCell.identifier.unsafeMutableAddressor : Swift.String"
+                  moduleName = "Movie App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cristutiu/movie-app-ios/Movie%20App/Movie%20App/ActorsTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "EA8A7403-D548-4C71-AA9F-71C685A8B8BA - 230a1aaf0b74abca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Movie_App.ActorsTableViewCell.identifier.getter : Swift.String"
+                  moduleName = "Movie App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cristutiu/movie-app-ios/Movie%20App/Movie%20App/ActorsTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

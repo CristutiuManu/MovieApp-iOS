@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GenresTableViewController" customModule="Movie_App" customModuleProvider="target">
+            <connections>
+                <outlet property="table" destination="Fee-3z-oYK" id="vH5-F8-ipX"/>
+                <outlet property="view" destination="osz-5a-S81" id="dye-SB-dK8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="osz-5a-S81">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fee-3z-oYK">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="pv1-og-Jgq"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <accessibility key="accessibilityConfiguration" identifier="genresView"/>
+            <constraints>
+                <constraint firstItem="Fee-3z-oYK" firstAttribute="top" secondItem="pv1-og-Jgq" secondAttribute="top" id="7YC-dU-s2j"/>
+                <constraint firstAttribute="bottom" secondItem="Fee-3z-oYK" secondAttribute="bottom" id="Mbe-4O-t0y"/>
+                <constraint firstItem="Fee-3z-oYK" firstAttribute="leading" secondItem="pv1-og-Jgq" secondAttribute="leading" id="mHR-vo-5DL"/>
+                <constraint firstItem="Fee-3z-oYK" firstAttribute="trailing" secondItem="pv1-og-Jgq" secondAttribute="trailing" id="rfG-sS-1Tm"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
